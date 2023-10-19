@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+/* CSS HEX */
+--battleship-gray: #88958dff;
+--black-olive: #3a4238ff;
+--rose-quartz: #bc9cb0ff;
+--french-gray: #d3cdd7ff;
+--mint-green: #ddf2ebff;
+--black: #141612;
+--white: #F0F9F6;
+
+/* CSS HSL */
+--battleship-gray: hsla(143, 6%, 56%, 1);
+--black-olive: hsla(108, 8%, 24%, 1);
+--rose-quartz: hsla(323, 19%, 67%, 1);
+--french-gray: hsla(276, 11%, 82%, 1);
+--mint-green: hsla(160, 45%, 91%, 1);
+
+/* CSS Gradient */
+--gradient-top: linear-gradient(0deg, #88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+--gradient-right: linear-gradient(90deg, #88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+--gradient-bottom: linear-gradient(180deg, #88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+--gradient-left: linear-gradient(270deg, #88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+--gradient-top-right: linear-gradient(45deg, #88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+--gradient-bottom-right: linear-gradient(135deg, #88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+--gradient-top-left: linear-gradient(225deg, #88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+--gradient-bottom-left: linear-gradient(315deg, #88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+--gradient-radial: radial-gradient(#88958dff, #3a4238ff, #bc9cb0ff, #d3cdd7ff, #ddf2ebff);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Mansalva', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+    background: #141612;
+}
+
+h1, h2 {
+    font-family: 'Mansalva', sans-serif;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-and-white-text {
+    display: flex;
+    color: var(--french-gray);
+    gap: 5px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.section-name {
+    font-family: 'Mansalva', sans-serif;
+    color:  #ddf2ebff;
+    margin: 5px 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+}
+
+.intro {
+    background: #3a4238ff;
+    margin: 0 20px;
+    border-radius: 20px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.wrapper {
+    padding: 15px;
+}
+
+.tech-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+img {
+    width: 100px;
+}
+
+p {
+    font-size: smaller;
+    color: #d3cdd7ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-links {
+    width: 300px;
+    margin: 30px 0 0;
+    padding: 8px 16px;
+    border: 2px solid var(--rose-quartz);
+    border-radius: 15px;
+
+    background: linear-gradient(var(--rose-quartz), var(--french-gray));
+    color: var(--black-olive);
+}
+
+.social-links:hover {
+    background: var(--black);
+    color: var(--rose-quartz);
+}
+
+.fa-brands, .fa-solid {
+    color: var(--black-olive);
+    text-shadow: 0 0 1px var(--french-gray);
+    margin: 0 5px;
+}
+
+.social-links .fa-brands:hover {
+    color: var(--rose-quartz);
+}
+
+.social-links .fa-solid:hover {
+    color: var(--rose-quartz);
+}
+
+.tech-logo .fa-brands {
+    color: var(--french-gray);
+    margin: 0 5px;
+    font-size: 25px;
+}
+
+.project-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 0 15px 75px;
+
+    border-radius: 20px;
+}
+
+.project-item:hover {
+    background: var(--black-olive);
+}
+
+.project-item img {
+    height: 100px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 5px;
+}
+
+.demo-btn {
+    width: 160px;
+    padding: 8px 16px;
+    border: 2px solid var(--rose-quartz);
+    border-radius: 15px;
+
+    background: linear-gradient(var(--rose-quartz), var(--french-gray));
+    color: var(--black-olive);
+}
+
+.demo-btn:hover {
+    background: var(--black);
+    color: var(--rose-quartz);
+}
